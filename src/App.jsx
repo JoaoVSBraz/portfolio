@@ -1,5 +1,9 @@
+import FirstScreen from "./components/FirstScreen/FirstScreen"
+
 export default function App() {
   return (
-    <h1>Olá, mundo!</h1>
+    <main className="bg-gray-dark font-saira font-medium text-center">
+      <FirstScreen />
+    </main>
   )
 }
