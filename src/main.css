@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.drop-shadow-card{
+    filter: drop-shadow(8px 8px 0 #202020);
+}
