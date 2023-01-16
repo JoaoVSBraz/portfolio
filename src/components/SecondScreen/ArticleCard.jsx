@@ -1,6 +1,6 @@
 export default function ArticleCard(props){
     return (
-        <article className="flex flex-col drop-shadow-card h-[344px] w-[242px] bg-white-light">
+        <article className="flex flex-col drop-shadow-card h-[344px] min-w-[242px] max-w-[242px] bg-white-light">
             <img src={props.imageSource} alt={props.imageAlt} />
             <div className="flex flex-col bg-white-light h-full items-center justify-between py-2 px-6">
                 <h3 className="">{props.cardTitle}</h3>
