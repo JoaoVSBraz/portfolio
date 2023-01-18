@@ -7,7 +7,7 @@ import tailwindSvg from '../../assets/tailwind.svg'
 
 export default function ThirdScreen(){
     return (
-        <div className="container flex flex-col h-screen">
+        <div id='contact' className="container flex flex-col h-screen">
             <div className="bg-white-regular h-[50vh]">
                 <section id="skills" className="flex align-center justify-center gap-8 overflow-x-auto my-8 p-6">
                     <img src={htmlSvg} alt="html svg" />

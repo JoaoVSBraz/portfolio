@@ -36,9 +36,9 @@ const backCards = [
 
 export default function SecondScreen() {
     return (
-        <div className="container flex flex-col h-screen">
-            <h2 className="text-white-light text-[32px]">PROJETOS</h2>
-            <section id="projects" className="flex flex-col h-full align-center justify-center">
+        <div id="projects" className="container flex flex-col h-screen">
+            <h2 className="text-white-light text-[32px] mt-[48px]">PROJETOS</h2>
+            <section className="flex flex-col h-full align-center justify-center">
                 <div className="flex align-center justify-evenly text-white-light
 text-white-light text-xl mb-8">
                     <button className="py-2 px-4 text-primary-regular underline">Frontend</button>

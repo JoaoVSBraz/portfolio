@@ -5,3 +5,22 @@
 .drop-shadow-card{
     filter: drop-shadow(8px 8px 0 #202020);
 }
+
+nav.active #mobile-menu{
+    right: 0;
+    transition: right .5s;
+}
+
+nav.active #hamburguer-menu{
+    border-top: transparent;
+}
+nav.active #hamburguer-menu::before{
+    transform: rotate(45deg);
+    top: 50%;
+    bottom: 50%;
+}
+nav.active #hamburguer-menu::after{
+    transform: rotate(-45deg);
+    top: 50%;
+    bottom: 50%;
+}
