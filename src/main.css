@@ -11,7 +11,7 @@
 }
 
 nav.active #mobile-menu{
-    right: 0;
+    right: -10px;
     transition: right .5s;
 }
 

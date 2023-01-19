@@ -60,17 +60,23 @@ export default function SecondScreen() {
     return (
         <div id="projects" className="relative container flex flex-col h-screen overflow-hidden">
             <section id="composing-elements z-0">
-                <div className="absolute blur opacity-25 left-0 top-10 w-40 h-40 rounded-full bg-primary-dark"></div>
-                <div className="absolute blur opacity-25 right-[-80px] top-40 w-52 h-52 rounded-full bg-primary-dark"></div>
-                <div className="absolute blur opacity-25 left-[-80px] bottom-[-64px] w-64 h-64 rounded-full bg-primary-dark"></div>
-                <div className="absolute blur opacity-25 right-8 bottom-8 w-14 h-14 rounded-full bg-primary-dark"></div>
+                <div className="absolute blur opacity-25 left-0 top-10 w-40 h-40 rounded-full bg-primary-dark
+                md:w-60 md:h-60"></div>
+                <div className="absolute blur opacity-25 right-[-80px] top-40 w-52 h-52 rounded-full bg-primary-dark
+                md:w-60 md:h-60 md:top-64"></div>
+                <div className="absolute blur opacity-25 left-[-80px] bottom-[-64px] w-64 h-64 rounded-full bg-primary-dark
+                md:w-[572px] md:h-[572px] md:left-[-200px]"></div>
+                <div className="absolute blur opacity-25 right-8 bottom-8 w-14 h-14 rounded-full bg-primary-dark
+                md:bottom-32"></div>
             </section>
-            <h2 className="text-white-light text-[32px] mt-[48px] z-10">PROJETOS</h2>
-            <section className="flex flex-col h-full align-center justify-center z-10">
+            <h2 className="text-white-light text-[32px] mt-[64px] z-10
+            md:text-[64px] md:mt-28">PROJETOS</h2>
+            <section className="flex flex-col h-min my-auto z-10
+            md:w-5/6 md:mx-auto md:my-40">
                 <div id="mobile-buttons" className="flex align-center justify-evenly text-white-light
-text-white-light text-xl mb-8" onClick={handleButton}>
-                    <button id="front" type="button" className="py-2 px-4 active">Frontend</button>
-                    <button id="back" type="button" className="py-2 px-4">Backend</button>
+text-white-light text-xl mb-4" onClick={handleButton}>
+                    <button id="front" type="button" className="py-2 px-4 md:text-[32px] md:py-8 active">Frontend</button>
+                    <button id="back" type="button" className="py-2 px-4 md:text-[32px] md:py-8">Backend</button>
                 </div>
                 <div id="front-cards" className="flex gap-x-8 overflow-x-auto columns-4 py-6 px-8">
                     {frontCards.map((card) => {
@@ -101,9 +107,7 @@ text-white-light text-xl mb-8" onClick={handleButton}>
                     })}
                 </div>
             </section>
-            <div className="relative flex h-min-fit items-center justify-center">
-                    <div className="h-8 absolute bottom-0 border-dashed border-r-2 border-white-light"></div>
-                </div>
+            <div className="h-8 absolute bottom-0 border-dashed border-r-2 border-white-light left-[50%] right-[50%]"></div>
         </div>
     )
 }
