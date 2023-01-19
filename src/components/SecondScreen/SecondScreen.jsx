@@ -5,7 +5,7 @@ const frontCards = [
         imageSource: './joaovsbraz-portfolio.png',
         imageAlt: 'Meu Portfólio',
         cardTitle: 'Portfólio',
-        cardContent: 'Construído com React, Vite e TailwindCSS. Confira a construção do layout no meu perfil Dribble.',
+        cardContent: 'Construído com React, Vite e TailwindCSS. Confira o layout completo no meu perfil Dribble.',
         cardLink: '#'
     },
     {
