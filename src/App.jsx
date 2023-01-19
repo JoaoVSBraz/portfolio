@@ -4,7 +4,7 @@ import ThirdScreen from "./components/ThirdScreen/ThirdScreen"
 
 export default function App() {
   return (
-    <main className="bg-gray-dark font-saira font-medium text-center overflow-hidden">
+    <main className="bg-gray-dark font-saira font-medium text-center overflow-hidden md:text-lg">
       <FirstScreen />
       <SecondScreen />
       <ThirdScreen />
