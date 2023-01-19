@@ -6,6 +6,10 @@
     outline: 2px dashed red;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .drop-shadow-card{
     filter: drop-shadow(8px 8px 0 #202020);
 }
