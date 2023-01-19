@@ -39,3 +39,12 @@ nav.active #hamburguer-menu::after{
         right: -10px;
     }
 }
+
+.rotateX-180{
+    transform: rotateY(180deg);
+}
+
+.rotateXY-180{
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+}
