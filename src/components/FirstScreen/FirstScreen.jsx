@@ -17,7 +17,7 @@ export default function FirstScreen(){
     }
 
     return (
-        <div className="container flex flex-col h-screen ">
+        <div className="container flex flex-col h-screen">
             <header className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-4 px-8 text-center z-50" onClick={handleMenuClick}>
                 <h1 className="text-2xl font-medium">João <span>Braz</span></h1>
 
@@ -27,10 +27,14 @@ export default function FirstScreen(){
                     before:content[''] before:flex before:w-[32px] before:h-[2px] before:bg-gray-dark before:absolute before:bottom-[6px] before:transition" >
                     <span className="sr-only">Abrir menu</span></button>
                     <ul id="mobile-menu" className="absolute top-0 right-[-2000px] w-[80vw] bg-white-regular h-screen mt-[48px] mx-[-24px]">
-                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark"><a href="#hero" className="w-full h-full">Início</a></li>
-                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark"><a href="#projects" className="w-full h-full">Projetos</a></li>
-                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark"><a href="#contact" className="w-full h-full">Contato</a></li>
-                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark">Blog</li>
+                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
+                        md:text-[32px] md:p-8"><a href="#hero" className="w-full h-full">Início</a></li>
+                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
+                        md:text-[32px] md:p-8"><a href="#projects" className="w-full h-full">Projetos</a></li>
+                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
+                        md:text-[32px] md:p-8"><a href="#contact" className="w-full h-full">Contato</a></li>
+                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
+                        md:text-[32px] md:p-8">Blog</li>
                     </ul>
                 </nav>
             </header>
