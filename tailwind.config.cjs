@@ -20,7 +20,8 @@ module.exports = {
         dark: '#DADADA',
         regular: '#EDEDED',
         light: '#F9F9F9'
-      }
+      },
+      transparent: 'transparent'
     },
     fontFamily: {
       saira: ['Saira Condensed', 'sans-serif'],
