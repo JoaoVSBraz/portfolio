@@ -23,8 +23,8 @@ export default function FirstScreen(){
     return (
         <div className="flex flex-col h-screen xl:relative">
             <header className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-4 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
-                <h1 className="flex text-2xl text-gray-dark font-medium place-self-center xl:gap-4 xl:order-2 xl:absolute xl:top-0 xl:left-[46.5%] xl:right-[50%] xl:py-8
-                2xl:left-[47.5%]">João <span className='xl:text-white-regular'>Braz</span></h1>
+                <h1 className="flex text-[18px] text-gray-dark font-medium place-self-center xl:gap-4 xl:order-2 xl:absolute xl:top-1 xl:left-[46.9%] xl:right-[50%] xl:py-4
+                2xl:left-[48%]">JOÃO <span className='xl:text-white-regular'>BRAZ</span></h1>
 
                 <nav id="nav-mobile" className="relative py-[2px] flex align-center justify-between bg-white-regular 
                 xl:bg-transparent xl:order-1" aria-expanded='false'>
@@ -34,37 +34,37 @@ export default function FirstScreen(){
                     xl:hidden">
                     <span className="sr-only">Abrir menu</span></button>
                     <ul id="mobile-menu" className="absolute top-0 right-[-2000px] w-[80vw] bg-white-regular h-screen mt-[48px] mx-[-24px]
-                    xl:bg-transparent xl:static xl:h-min xl:flex xl:mt-0 xl:justify-evenly xl:w-fit xl:gap-12">
+                    xl:bg-transparent xl:static xl:h-min xl:flex xl:mt-0 xl:justify-evenly xl:w-fit xl:gap-8 2xl:gap-16">
                         <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
                         md:text-[32px] md:p-8
-                        xl:border-none xl:p-4 xl:text-2xl">
-                            <a href="#hero" className="w-full h-full">Início</a></li>
+                        xl:border-none xl:px-4 xl:py-0 xl:text-[18px] hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular">
+                            <a href="#hero" className="w-full h-full">INÍCIO</a></li>
                         <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
                         md:text-[32px] md:p-8
-                        xl:border-none xl:p-4 xl:text-2xl">
-                            <a href="#projects" className="w-full h-full">Projetos</a></li>
+                        xl:border-none xl:px-4 xl:py-0 xl:text-[18px] hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular">
+                            <a href="#projects" className="w-full h-full">PROJETOS</a></li>
                         <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
                         md:text-[32px] md:p-8
-                        xl:border-none xl:p-4 xl:text-2xl">
-                            <a href="#contact" className="w-full h-full">Contato</a></li>
-                        <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
+                        xl:border-none xl:px-4 xl:py-0 xl:text-[18px] hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular">
+                            <a href="#contact" className="w-full h-full">CONTATO</a></li>
+                        <li className="hidden flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
                         md:text-[32px] md:p-8
-                        xl:border-none xl:p-4 xl:text-2xl">
-                            Blog</li>
+                        xl:border-none xl:px-4 xl:py-0 xl:text-[18px] hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular">
+                            BLOG</li>
                     </ul>
                 </nav>
 
                 <div className='hidden xl:flex xl:items-center xl:justify-center xl:gap-20 xl:order-3'>
-                    <a href='#' className='xl:p-4'><img className='w-fit' src={github} alt="Imagem vetorial do icone do Github" /></a>
-                    <a href='#' className='xl:p-4'><img className='w-fit' src={linkedin} alt="Imagem vetorial do icone do Linkedin" /></a>
-                    <a href='#' className='xl:p-4'><img className='w-fit' src={dribble} alt="Imagem vetorial do icone do Dribble" /></a>
+                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={github} alt="Imagem vetorial do icone do Github" /></a>
+                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={linkedin} alt="Imagem vetorial do icone do Linkedin" /></a>
+                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={dribble} alt="Imagem vetorial do icone do Dribble" /></a>
                 </div>
             </header>
-            <section id="hero" className="container bg-white-regular text-gray-dark flex flex-col gap-8 h-full w-full mt-[65px] 
-            md:w-full md:align-center md:justify-center md:gap-0
+            <section id="hero" className="bg-white-regular text-gray-dark flex flex-col gap-4 h-full w-full mt-[60px] 
+            md:w-full align-center justify-center md:gap-0
             xl:flex-row xl:w-1/2 xl:m-0">
-                <div className="w-3/6 mx-auto md:px-8 xl:px-0 xl:pr-40 xl:h-fit xl:my-auto xl:absolute xl:top-[50%] xl:bottom-[50%] xl:left-0">
-                    <h2 className="text-5xl mx-auto pt-8 pb-4 
+                <div className="w-3/6 mx-auto md:px-8 xl:px-0 xl:pl-28 xl:pr-40 xl:h-fit xl:my-auto xl:absolute xl:top-[50%] xl:bottom-[50%] xl:left-0">
+                    <h2 className="text-5xl font-normal mx-auto pt-8 pb-4 
                     md:text-7xl">Olá, sou <br /> JOÃO BRAZ</h2>
                     <h3 className="text-xl font-medium
                     md:text-[32px] md:mt-8">Desenvolvedor Fullstack</h3>
