@@ -1,5 +1,4 @@
 import ArticleCard from "./ArticleCard"
-import { useState } from "react"
 
 const frontCards = [
     {
@@ -32,19 +31,7 @@ const backCards = [
         cardTitle: 'Roquet Q',
         cardContent: 'Plataforma de perguntas e respostas baseada em salas construída com JS, Node e Sqlite.',
         cardLink: '#'
-    },{
-        imageSource: './roquet-q.png',
-        imageAlt: 'RoquetQ - Plataforma de perguntas e respostas',
-        cardTitle: 'Roquet Q',
-        cardContent: 'Plataforma de perguntas e respostas baseada em salas construída com JS, Node e Sqlite.',
-        cardLink: '#'
-    },{
-        imageSource: './roquet-q.png',
-        imageAlt: 'RoquetQ - Plataforma de perguntas e respostas',
-        cardTitle: 'Roquet Q',
-        cardContent: 'Plataforma de perguntas e respostas baseada em salas construída com JS, Node e Sqlite.',
-        cardLink: '#'
-    },
+    }
 ]
 
 export default function SecondScreen() {
@@ -106,10 +93,10 @@ xl:justify-around xl:mt-16
             </div>
             <section className="flex flex-col h-min my-auto z-10
              md:mx-auto md:my-8
-             xl:m-0 xl:flex-row xl:mx-auto xl:gap-8 xl:mt-16">
+             xl:m-0 xl:flex-row xl:px-4 xl:gap-8 xl:mt-16">
                 
-                    <div id="front-cards" className="flex gap-x-8 overflow-x-auto columns-4 py-6 px-8 active
-                    xl:px-2 xl:gap-x-4
+                    <div id="front-cards" className="flex gap-x-8 overflow-x-auto columns-4 py-6 mx-8 active
+                    xl:px-2 xl:gap-x-4 xl:justify-center xl:w-1/2 xl:m-0
                     2xl:px-4 2xl:gap-x-8">
                         {frontCards.map((card) => {
                             return (
@@ -125,8 +112,8 @@ xl:justify-around xl:mt-16
                         })}
                     </div>
 
-                    <div id="back-cards" className="flex gap-x-8 overflow-x-auto columns-4 py-6 px-8 hidden
-                    xl:px-2 xl:flex xl:gap-x-4
+                    <div id="back-cards" className="flex gap-x-8 overflow-x-auto columns-4 py-6 mx-8 hidden mx-auto
+                    xl:flex xl:justify-center xl:px-2 xl:gap-x-4 xl:w-1/2 xl:m-0
                     2xl:px-4 2xl:gap-x-8">
                     {backCards.map((card) => {
                         return (
