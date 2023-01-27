@@ -2,7 +2,7 @@
 
 This is my porfólio where you can view some of the projects that I've been made. Feel free to get in touch!
 
-![](/portfolio//public/joaobraz.gif)
+![](public/portfolio.gif)
 
 ## Contents
 
