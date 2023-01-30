@@ -8,7 +8,7 @@ export default function ArticleCard(props){
 
                 <p className="text-base">{props.cardContent}</p>
 
-                <button type="button" className="w-full py-[2px] bg-primary-regular outline outline-4 text-2xl"><a href={props.cardLink}target="_blank">ACESSAR</a></button>
+                <button type="button" className="w-full py-[2px] bg-primary-regular outline outline-4 text-2xl hover:bg-primary-light"><a href={props.cardLink}target="_blank">ACESSAR</a></button>
             </div>
         </article>
     )

@@ -88,9 +88,9 @@ export default function FirstScreen(){
 
                     <div className="flex justify-evenly xl:justify-start xl:gap-4">
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
-                        md:px-8"><a href="#contact" className="w-full h-full">CONTATO</a></button>
+                        md:px-8 hover:bg-primary-light"><a href="#contact" className="w-full h-full">CONTATO</a></button>
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
-                        md:px-8"><a href="#">DOWNLOAD CV</a></button>
+                        md:px-8 hover:bg-primary-light"><a href="#">DOWNLOAD CV</a></button>
                     </div>
                 </div>
                 
