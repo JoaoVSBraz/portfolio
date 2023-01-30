@@ -6,21 +6,21 @@ const frontCards = [
         imageAlt: 'Meu Portfólio',
         cardTitle: 'Portfólio',
         cardContent: 'Construído com React, Vite e TailwindCSS. Confira o layout completo no meu perfil Dribble.',
-        cardLink: '#'
+        cardLink: 'https://github.com/JoaoVSBraz/portfolio'
     },
     {
         imageSource: './detran-pe.png',
         imageAlt: 'Site institucional do Departamento de Trânsito de Pernambuco',
         cardTitle: 'Detran PE',
         cardContent: 'Em conjunto com a equipe web, desenvolvi o atual site do Departamento de Trânsito de Pernambuco.',
-        cardLink: '#'
+        cardLink: 'https://www.detran.pe.gov.br/'
     },
     {
         imageSource: './ignite-lab.png',
         imageAlt: 'Plataforma de vídeo-aulas online construída durante o evento Ignite Lab pela Rocketseat',
         cardTitle: 'Ignite Lab',
         cardContent: 'Plataforma de vídeo-aulas online construída com React, Apollo Client, GraphQL e GraphCMS. ',
-        cardLink: '#'
+        cardLink: 'https://github.com/JoaoVSBraz/ignite-lab'
     },
 ]
 
@@ -30,7 +30,7 @@ const backCards = [
         imageAlt: 'RoquetQ - Plataforma de perguntas e respostas',
         cardTitle: 'Roquet Q',
         cardContent: 'Plataforma de perguntas e respostas baseada em salas construída com JS, Node e Sqlite.',
-        cardLink: '#'
+        cardLink: 'https://github.com/JoaoVSBraz/rocket-q'
     }
 ]
 
