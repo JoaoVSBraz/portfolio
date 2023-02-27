@@ -22,7 +22,7 @@ export default function FirstScreen(){
 
     return (
         <div className="flex flex-col h-screen xl:relative">
-            <header className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-4 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
+            <header id='header' className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-4 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
                 <h1 className="flex text-[18px] text-gray-dark font-medium place-self-center xl:gap-4 xl:order-2 xl:absolute xl:top-1 xl:left-[46.9%] xl:right-[50%] xl:py-4
                 2xl:left-[48%]">JOÃO <span className='xl:text-white-regular'>BRAZ</span></h1>
 
