@@ -37,3 +37,19 @@ const title = <h1>Hello, world!</h1>
 ## Vite
 
 I tried to combine React with some featured technologies like Vite. Vite is a frontend build tooling that aims to improve web development by providing a faster development experience. Using Vite your project will be created fastly than the React default implementation one.
+
+## Tailwind
+
+TailwindCSS is one of the most famous CSS framework nowadays. It is based in utility-first concept - an interesting way to write css trought classes. 
+
+Here's a block of code containing a React component styled with TailwindCSS.
+```html
+<img className='w-16 h-16 2xl:w-24 2xl:h-24' src={htmlSvg} alt="Icone vetorial da linguagem de marcação html" />
+```
+
+## References
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Figma](https://www.figma.com)
