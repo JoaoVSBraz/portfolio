@@ -53,9 +53,9 @@ export default function FirstScreen(){
                 </nav>
 
                 <div className='hidden xl:flex xl:items-center xl:justify-center xl:gap-20 xl:order-3'>
-                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={github} alt="Imagem vetorial do icone do Github" /></a>
-                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={linkedin} alt="Imagem vetorial do icone do Linkedin" /></a>
-                    <a href='#' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={dribble} alt="Imagem vetorial do icone do Dribble" /></a>
+                    <a href='https://github.com/JoaoVSBraz' target='blank' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={github} alt="Imagem vetorial do icone do Github" /></a>
+                    <a href='https://www.linkedin.com/in/joaovsbraz/' target='blank' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={linkedin} alt="Imagem vetorial do icone do Linkedin" /></a>
+                    <a href='https://dribbble.com/joaovsbraz' target='blank' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={dribble} alt="Imagem vetorial do icone do Dribble" /></a>
                 </div>
             </header>
             <section id="hero" className="bg-white-regular text-gray-dark flex flex-col gap-4 h-full w-full mt-[60px] 
