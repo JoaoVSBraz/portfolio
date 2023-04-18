@@ -22,16 +22,16 @@ export default function FirstScreen(){
 
     return (
         <div className="flex flex-col h-screen xl:relative">
-            <header id='header' className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-4 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
+            <header id='header' className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-7 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
 
                 <nav id="nav-mobile" className="relative py-[2px] flex align-center justify-between bg-white-regular 
                 xl:bg-transparent xl:order-1" aria-expanded='false'>
-                    <button id="hamburguer-menu" type="button" title="menu hamburguer" className="relative z-20 flex flex-col align-center justify-evenly w-[32px] border-t-[2px] 
+                    <button id="hamburguer-menu" type="button" title="menu hamburguer" className="relative z-20 flex flex-col align-center justify-evenly w-[32px] border-b-[2px] 
                     after:content[''] after:flex after:w-[32px] after:h-[2px] after:bg-gray-dark after:absolute after:top-[8px] after:transition
                     before:content[''] before:flex before:w-[32px] before:h-[2px] before:bg-gray-dark before:absolute before:bottom-[6px] before:transition
                     xl:hidden">
                     <span className="sr-only">Abrir menu</span></button>
-                    <ul id="mobile-menu" className="absolute top-0 right-[-2000px] w-[80vw] bg-white-regular h-screen mt-[48px] mx-[-24px]
+                    <ul id="mobile-menu" className="absolute top-0 right-[-2000px] w-[80vw] bg-white-regular h-screen mt-[33px] mx-[-24px]
                     xl:bg-transparent xl:static xl:h-min xl:flex xl:mt-0 xl:justify-evenly xl:w-fit xl:gap-8 2xl:gap-16">
                         <li className="flex align-center justify-center p-4 text-2xl border-b-[1px] border-white-dark
                         md:text-[32px] md:p-8
@@ -58,7 +58,7 @@ export default function FirstScreen(){
                     <a href='https://dribbble.com/joaovsbraz' target='blank' className='xl:px-4 xl:py-2 hover:underline hover:decoration-4 hover:underline-offset-2 hover:decoration-primary-regular'><img className='w-4' src={dribble} alt="Imagem vetorial do icone do Dribble" /></a>
                 </div>
             </header>
-            <section id="hero" className="bg-white-regular text-gray-dark flex flex-col gap-4 h-full w-full mt-[60px] 
+            <section id="hero" className="bg-white-regular text-gray-dark flex flex-col gap-4 h-full w-full 
             md:w-full align-center justify-center md:gap-0
             xl:flex-row xl:w-1/2 xl:m-0">
                 <div className="w-3/6 mx-auto md:px-8 xl:px-0 xl:pl-28 xl:pr-40 xl:h-fit xl:my-auto xl:absolute xl:top-[50%] xl:bottom-[50%] xl:left-0">
@@ -88,7 +88,7 @@ export default function FirstScreen(){
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
                         md:px-8 hover:bg-primary-light"><a href="#contact" className="w-full h-full">CONTATO</a></button>
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
-                        md:px-8 hover:bg-primary-light"><a href="#">DOWNLOAD CV</a></button>
+                        md:px-8 hover:bg-primary-light"><a href="/joaovsbraz-curriculo.pdf" download={'joaovsbraz'}>DOWNLOAD CV</a></button>
                     </div>
                 </div>
                 

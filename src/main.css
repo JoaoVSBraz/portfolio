@@ -40,12 +40,12 @@ html {
 }
 
 nav.active #mobile-menu {
-    right: -10px;
-    transition: right .5s;
+    left: -10px;
+    transition: left .5s;
 }
 
 nav.active #hamburguer-menu {
-    border-top: transparent;
+    border-bottom: transparent;
 }
 
 nav.active #hamburguer-menu::before {
