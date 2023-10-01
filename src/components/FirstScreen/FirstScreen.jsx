@@ -88,7 +88,7 @@ export default function FirstScreen(){
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
                         md:px-8 hover:bg-primary-light"><a href="#contact" className="w-full h-full">CONTATO</a></button>
                         <button type="button" className="py-2 px-4 bg-primary-regular border-4
-                        md:px-8 hover:bg-primary-light"><a href="/joaovsbraz-curriculo.pdf" download={'joaovsbraz'}>DOWNLOAD CV</a></button>
+                        md:px-8 hover:bg-primary-light"><a href="/joaovsbraz.pdf" download={'joaovsbraz'}>DOWNLOAD CV</a></button>
                     </div>
                 </div>
                 
