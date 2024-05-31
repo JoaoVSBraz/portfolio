@@ -3,33 +3,25 @@ import charRightWhite from '../../assets/char-right-white-side.svg'
 import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
 import dribble from '../../assets/dribble.svg'
+import { useState } from 'react'
 
 export default function FirstScreen(){
+    const [isMenuActive, setIsMenuActive] = useState(false)
 
-    function handleMenuClick(e){
-        const nav = document.querySelector('nav')
-        const ul = document.querySelector('#mobile-menu')
-        
-        if(e.target.id === 'hamburguer-menu'){
-            nav.classList.toggle('active')
-        }else if(e.target.tagName === 'A'){
-            nav.classList.toggle('active')
-        }
-        const active = nav.classList.contains('active')
-        nav.setAttribute('aria-expanded', active)
-        
+    function handleMenuClick(){                        
+        setIsMenuActive(!isMenuActive)
     }
 
     return (
         <div className="flex flex-col h-screen xl:relative">
-            <header id='header' className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-7 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20" onClick={handleMenuClick}>
+            <header id='header' className="fixed bg-white-regular border-b-[1px] border-white-dark w-full h-fit flex align-center justify-between py-7 px-8 text-center z-50 xl:absolute xl:bg-transparent xl:border-0 xl:px-16 2xl:px-20">
 
-                <nav id="nav-mobile" className="relative py-[2px] flex align-center justify-between bg-white-regular 
-                xl:bg-transparent xl:order-1" aria-expanded='false'>
+                <nav id="nav-mobile" className={`relative py-[2px] flex align-center justify-between bg-white-regular 
+                xl:bg-transparent xl:order-1 ${isMenuActive ? 'active' : ''}`} aria-expanded={`${isMenuActive ? 'true' : 'false'}`}>
                     <button id="hamburguer-menu" type="button" title="menu hamburguer" className="relative z-20 flex flex-col align-center justify-evenly w-[32px] border-b-[2px] 
                     after:content[''] after:flex after:w-[32px] after:h-[2px] after:bg-gray-dark after:absolute after:top-[8px] after:transition
                     before:content[''] before:flex before:w-[32px] before:h-[2px] before:bg-gray-dark before:absolute before:bottom-[6px] before:transition
-                    xl:hidden">
+                    xl:hidden" onClick={handleMenuClick}>
                     <span className="sr-only">Abrir menu</span></button>
                     <ul id="mobile-menu" className="absolute top-0 right-[-2000px] w-[80vw] bg-white-regular h-screen mt-[33px] mx-[-24px]
                     xl:bg-transparent xl:static xl:h-min xl:flex xl:mt-0 xl:justify-evenly xl:w-fit xl:gap-8 2xl:gap-16">
